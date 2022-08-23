@@ -1,3 +1,10 @@
+function addinputValue(addinput) {
+  const manager = document.getElementById(addinput);
+  const getmanagerString = manager.value;
+  const getmanager = parseFloat(getmanagerString);
+  return getmanager;
+}
+
 document
   .getElementById("total-calculate-btn")
   .addEventListener("click", function () {
@@ -9,23 +16,20 @@ document
     // player-expense
 
     // manager
-    const manager = document.getElementById("manager-input");
-    const getmanagerString = manager.value;
-    const getmanager = parseFloat(getmanagerString);
+    const getmange = addinputValue("manager-input");
     // manager
 
     // coach
-    const coach = document.getElementById("coach-input");
-    const getcoachString = coach.value;
-    const getcoach = parseFloat(getcoachString);
+    const getcoach = addinputValue("coach-input");
     // coach
+
     // totals
     const total = document.getElementById("all-expense");
     const gettotalString = total.innerText;
     const gettotal = parseFloat(gettotalString);
     // total
     // calculate-total
-    const calculatetotal11 = getmanager + getcoach + getplayer;
+    const calculatetotal11 = getmange + getcoach + getplayer;
     total.innerText = calculatetotal11;
     // calculate-total
   });
