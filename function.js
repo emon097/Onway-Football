@@ -8,7 +8,8 @@ function desplay(arrays) {
 
     if (array.length > 5) {
       array.length = 5;
-      console.log(array.length, "stop");
+      alert("stop");
+      console.log(array.length, "You cannot select more than 5");
     }
     const playersname = array[i].playersname;
     const tr = document.createElement("tr");

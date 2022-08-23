@@ -1,2 +1,39 @@
+
 .cantar{  color: white; font-weight:500; width: 41.5vh; } 
 .cantarr{  color: white; font-weight:500; width: 42.6vh; } 
+.bgimage{ background-image: url(image/background\ images.jpg);
+width:0 auto;
+text-align: center;
+           
+            background-repeat: no-repeat;
+            height: 100%;
+            
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-position-y: center; 
+            
+}
+
+
+ 
+ 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: aqua;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: poiter;
+  }
+  
+  .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+ 
+
