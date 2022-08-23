@@ -12,6 +12,11 @@ function desplay(arrays) {
     <td>${playersname}</td>
     `;
     playerstable.appendChild(tr);
+    if (i === 5) {
+      console.log("ujifoeddfgfd");
+    } else {
+      console.log("ok");
+    }
   }
 }
 
