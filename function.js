@@ -5,6 +5,11 @@ function desplay(arrays) {
   playerstable.innerHTML = "";
   for (let i = 0; i < arrays.length; i++) {
     // console.log(array[i].playersname);
+
+    if (array.length > 5) {
+      array.length = 5;
+      console.log(array.length, "stop");
+    }
     const playersname = array[i].playersname;
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -12,11 +17,6 @@ function desplay(arrays) {
     <td>${playersname}</td>
     `;
     playerstable.appendChild(tr);
-    if (i === 5) {
-      console.log("ujifoeddfgfd");
-    } else {
-      console.log("ok");
-    }
   }
 }
 
