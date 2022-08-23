@@ -1,0 +1,46 @@
+<h2 class="flex justify-center font-bold p-2">Budget</h2>
+              <input type="text" name="" id="input-per" />
+
+              <br />
+              <div>
+                <button
+                  id="calculate-btn"
+                  class="flex mt-3 justify-center bg-red-500 text-white p-1 px-20"
+                  onclick="addtoplayer(this)"
+                >
+                  Calculate
+                </button>
+              </div>
+              <div class="flex mt-2 justify-around">
+                player expense
+                <h3 class="text-green-500">
+                  $ <span id="player-expense">5000</span>
+                </h3>
+              </div>
+              <!-- player-section start -->
+
+              <!-- player-section end -->
+            </ol>
+          </div>
+          <div class="mt-10 modify">
+            <div class=" ">
+              <span>Manager:</span>
+              <input class="inline-flex" type="number" name="" id="manager" />
+            </div>
+            <br />
+            <div class=" ">
+              <span>Coach:</span>
+              <input class="inline-flex" type="number" name="" id="coach" />
+            </div>
+            <div class="flex mt-6">
+              <h3 class="mr-5">Total:</h3>
+              <p class="text-green-500">$<span id="total">11000</span></p>
+            </div>
+            <button
+              id="calculate-total"
+              class="flex mt-6 p-1 px-9 justify-center bg-red-500 text-white"
+            >
+              Calculate total
+            </button>
+          </div>
+        </div>

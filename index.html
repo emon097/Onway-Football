@@ -10,7 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -26,7 +26,7 @@
     </header>
     <main>
       <!-- player name-section start -->
-      <section class="grid grid-cols-2">
+      <section class="flex  ">
         <div
           class="grid grid-cols-3 gap-5 mt-8 mr-4 bg-gray-500 pt-5 ml-8 pl-5 mr-8 pr-5"
         >
@@ -37,10 +37,15 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Lionel Messi</h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -51,10 +56,16 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Neymar Jr
+            </h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -65,10 +76,17 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Sergio Ramos
+
+            </h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -79,10 +97,16 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Vítor Machado
+            </h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -93,10 +117,16 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Sergio Ramos
+            </h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
@@ -107,67 +137,83 @@
           >
             <img src="image/Rectangle 144.png" alt="" />
             <div class="card-body p-5 flex-none items-center text-center">
-              <h2>Shoes!</h2>
+              <h2>Renato Sanches
+            </h2>
               <p>36 Goals 120 Assist</p>
               <div class="card-actions">
-                <button class="btn btn-primary w-40 mb-0 pm-0">SELECT</button>
+                <button
+                  onclick="players(this)"
+                  class="btn btn-primary w-40 mb-0 pm-0"
+                >
+                  SELECT
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- player name-section end -->
-        <div class="mt-20 text-2xl">
-          <h2
-            class="flex justify-center underline decoration-wavy decoration-red-500 font-bold"
-          >
-            Selected - V
-          </h2>
-          <div class="mt-4 flex justify-center">
-            <ol>
-              <li><span>1.</span> Lionel Messi</li>
-              <li><span>2.</span> Lionel Messi</li>
-              <li><span>3.</span> Lionel Messi</li>
-              <li><span>4.</span> Lionel Messi</li>
-              <li><span>5.</span> Lionel Messi</li>
-
-              <h2 class="flex justify-center font-bold mt-20 mb-3 p-2">
-                Budget
-              </h2>
-              <input type="text" name="" id="" />
-              <br />
-              <div>
-                <button
-                  class="flex justify-center mt-4 bg-red-500 text-white p-1 px-20"
+        <!-- selected-player -->
+        <section>
+            <div class="text-2xl mt-10">
+                <h2
+                  class=" font-bold"
                 >
-                  Calculate
-                </button>
-              </div>
-              <h3>player expense <span>$5000</span></h3>
-              <!-- player-section start -->
-              <div class="mt-20">
-                <div class=" ">
-                  <span>Manager:</span>
-                  <input class="inline-flex m-3" type="text" name="" id="" />
-                </div>
-                <div class="">
-                  <span class="mr-7">Coach:</span>
-                  <input class="m-3" type="text" name="" id="" />
-                  <button
-                    class="flex justify-center mt-4 bg-red-500 text-white p-1 px-20"
-                  >
-                    Calculate Total
-                  </button>
-                </div>
-              </div>
-              <!-- player-section end -->
-            </ol>
-          </div>
-        </div>
+                  Selected - Player
+                </h2>
+                <!-- player-name-section -->
+                <table class="table w-full">
+                    <thead>
+                    
+                    <tbody id="add-player" >
+                        
+                    
+                    </tbody>
+                  </table>
+                   <!-- player-name-section -->
+                  <div>
+                    <h1 class="text-center  mt-10 font-bold ">Budget</h1>
+                     <div class="flex">
+                      <p class="grid content-center" >Per Player</p>
+                    <input  class=" text-black m-4 block w-52 p-1 "  type="text" name="" id="per-player-input" placeholder="Per Player Budget" > 
+                     </div>
+
+                    <button id="calculate-btn" class="cantar ml-5 bg-indigo-700 p-1" type="submit"  >Calculate</button>
+
+                    <h2 class="mt-4" > Total Expense $<span class="text-red-400" id="total" >5000</span> </h2>
+                  </div>
+                  <!-- manager-coach -->
+                  <div class="mt-20" >
+                   <!-- coach-section -->
+                    <div class="flex">
+                      <p class="grid content-center mr-7  " >Coach</p>
+                    <input  class=" text-black  m-4 block w-52 p-1 "  type="text" name="" id="coach-input" placeholder="Coach Budget" > 
+                     </div>
+                   <!-- coach-section -->
+
+                   <!-- manager-section -->
+                    <div class="flex">
+                      <p class="grid content-center  " >Manager</p>
+                    <input id="manager-input" class=" text-black m-4 block w-52 p-1 "  type="text" name="" id="per-player-input" placeholder="Coach Budget" > <br>
+                     </div>
+                     <!-- manager-section -->
+
+                     <!-- all-expense -->
+                     <button id="total-calculate-btn" class="cantarr  bg-indigo-700 p-1" >Total Calculate</button>
+                     <h2 class="mt-7 flex justify-between " > All Expense <p  class="text-red-400  " >$<span  id="all-expense">5000</span> </p> </h2>
+                     <!-- all-expense -->
+
+                  </div>
+                  <!-- manager-coach -->
+                  
+        </section>
+        <!-- selected-player -->
       </section>
 
       <!-- player-section- calculation - start-->
       <section></section>
       <!-- player-section- calculation - end-->
     </main>
+    <script src="calculatetotal.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
