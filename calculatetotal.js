@@ -4,15 +4,18 @@ function addinputValue(addinput) {
   const getmanager = parseFloat(getmanagerString);
   return getmanager;
 }
+function addtextelement(text) {
+  const playerexpense = document.getElementById(text);
+  const getplayerString = playerexpense.innerText;
+  const getplayer = parseFloat(getplayerString);
+  return getplayer;
+}
 
 document
   .getElementById("total-calculate-btn")
   .addEventListener("click", function () {
     // player-expense
-    const playerexpense = document.getElementById("total");
-    const getplayerString = playerexpense.innerText;
-    const getplayer = parseFloat(getplayerString);
-
+    const getplayer = addtextelement("total");
     // player-expense
 
     // manager
